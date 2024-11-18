@@ -1,0 +1,39 @@
+@use 'var';
+
+.hero{
+    padding: 3.2vw;
+    min-height: 100vh;
+    background-image: url(../images/vingadores_ultimato.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    &__content{
+        h2{
+            color: silver;
+            font-size: 6vw;
+            margin-bottom: 15vw;
+
+        }
+        .button{
+            text-decoration: none;
+            background-color: var.$corbutton;
+            border: none;
+            width: 50%;
+            padding: 2vw;
+            text-align: center;
+            font-size: 5vw;
+            border-radius: 9px;
+            color: var.$cordefundo;
+            &:hover{
+                background-color: lighten(var.$corbutton, 8%);
+            }
+        }
+
+        p{
+            margin-top: 3.5vw;
+            font-size: 2.3vw;
+            color: #f7f0f0;
+            width: 50vw;
+        }
+    }
+}
