@@ -1,7 +1,9 @@
 @use 'hero';
 @use 'var';
 @use 'detalhes';
-
+@use 'header';
+@use 'trailer';
+@use 'faq';
 
 
 
@@ -13,4 +15,20 @@
 
 body{
     background-color: var.$cordefundo;
+}
+
+footer{
+    padding: 3.2vw;
+    color: silver;
+    text-align: center;
+    border-top: 2px solid #fffafa;
+    @media (max-width:768px){
+        font-size: 10px;
+    }
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ease;
 }

@@ -1,0 +1,25 @@
+@use 'var';
+
+
+.trailer{
+    padding: 3.2vw;
+    &__titulo{
+        border-bottom: 2px solid #fffafa;
+        color: silver;
+        font-size: 36px;
+        margin-bottom: 24px;
+        @media (max-width:768px){
+            font-size: 24px;
+        }
+    }
+
+    iframe{
+        margin: 16px;
+        border: 2px solid #fffafa;
+    }
+
+    &__video{
+        display: flex;
+        justify-content: center;
+    }
+}

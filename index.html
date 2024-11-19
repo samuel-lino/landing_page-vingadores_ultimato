@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="./dist/styles/main.css">
 </head>
 <body>
+    <header class="header">
+        <h1>
+            <img class="header__logo hidden" src="./dist/images/logo.png" alt="Vingadores Ultimato">
+        </h1>
+        <div class="button-header">
+            <a href="https://www.disneyplus.com/pt-br/movies/vingadores-ultimato-da-marvel-studios/aRbVJUb2h2Rf" target="_blank" class="assistir hidden">Assistir agora</a>
+            <a href="#trailer" class="Vtrailer">Veja o trailer</a>
+        </div>
+    </header>
     <section class="hero">
         <h2>
             Vingadores Ultimato
         </h2>
         <div class="hero__content">
-            <a href="#" class="button">
+            <a href="https://www.disneyplus.com/pt-br/movies/vingadores-ultimato-da-marvel-studios/aRbVJUb2h2Rf" target="_blank" class="button">
                 Assistir agora
             </a>
             <p>
@@ -81,5 +90,34 @@
             </div>
         </div>
     </section>
+    <section class="trailer" id="trailer">
+        <div class="trailer__titulo">
+            <h3>Veja o Trailer</h3>
+        </div>
+        <div class="trailer__video">
+            <iframe width="1024" height="430" src="https://www.youtube.com/embed/g6ng8iy-l0U?si=igGHoM9HVn0mx0xr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="faq__titulo">
+            <h3>Duvidas comuns sobre o filme</h3>
+        </div>
+        <div class="faq__item">
+            <h4 class="faq__item__quest" data-faq-select>O enredo é um loop fechado no tempo ou um universo paralelo?</h4>
+            <p class="faq__item__resp">O enredo não é um loop de tempo, mas sim uma criação de uma nova linha do tempo a partir das decisões tomadas no passado.</p>
+        </div>
+        <div class="faq__item">
+            <h4 class="faq__item__quest" data-faq-select>Porque o visão não voltou em Ultimato?</h4>
+            <p class="faq__item__resp">Como Visão morreu antes do Estalo, e portanto, não foi uma vítima da Dizimação promovida por Thanos, o personagem não voltou à vida junto com os outros heróis em Vingadores: Ultimato. </p>
+        </div>
+        <div class="faq__item">
+            <h4 class="faq__item__quest" data-faq-select>Como Steve Rogers decidiu ficar com Peggy Carter no final do filme?</h4>
+            <p class="faq__item__resp">Ele fez uma decisão egoísta e escolheu ficar com Peggy Carter no passado.</p>
+        </div>
+    </section>
+    <footer>
+        Projeto feito por: Samuel Eduardo Lino Gomes - EBAC
+    </footer>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+@use 'var';
+
+
+.header{
+    padding: 0.2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(var.$cordefundo, $alpha: .5);
+    &__logo{
+        visibility: visible;
+        height: 70px;
+        transition: opacity .5s ease;
+        @media (max-width:768px){
+            height: 40px;
+        }
+    }
+    a{
+        text-decoration: none;
+        padding: 20px;
+        font-size: 18px;
+        border-radius: 9px;
+        @media (max-width:768px){
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+
+    .assistir{
+        background-color: var.$corbutton;
+        color: #000000;
+        transition: opacity .5s ease;
+    }
+
+    .Vtrailer{
+        background-color: #424040;
+        color: #ffff;
+    }
+}
